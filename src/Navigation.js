@@ -15,11 +15,11 @@ const Navigation = () => {
           <i className="fas fa-home"></i>
           <span>Home</span>
         </NavLink>
-        <NavLink to="/search">
+        <NavLink to="/search" exact>
           <i className="fas fa-search"></i>
           <span>Search</span>
         </NavLink>
-        <NavLink to="/favorites">
+        <NavLink to="/favorites" exact>
           <i className="fas fa-heart"></i>
           <span>Favorites</span>
         </NavLink>
