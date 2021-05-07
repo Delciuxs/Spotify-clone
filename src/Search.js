@@ -31,7 +31,7 @@ const Search = ({ setPlayTrack }) => {
           <input
             ref={inputRef}
             type="text"
-            placeholder="Artist, songs, podacasts"
+            placeholder="Artist, songs, podcasts"
           />
         </form>
       </div>
