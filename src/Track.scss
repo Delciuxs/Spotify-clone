@@ -1,0 +1,32 @@
+.track-card {
+  background-color: #282828;
+  width: 200px;
+  margin: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  .image-track {
+    margin: 2rem 0rem;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    font-size: 4rem;
+    background-color: #000000;
+    border-radius: 10px;
+  }
+
+  .info-track {
+    margin: 1rem;
+    .track-name {
+      color: #ffffff;
+      font-size: 1.2rem;
+    }
+    .track-artist {
+      color: #b3b3b3;
+      font-size: 0.8rem;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.content {
+  margin-left: 25%;
+  margin-bottom: 120px;
+  color: white;
+  background-color: #121212;
+}
+
+@media (max-width: 720px) {
+  .content {
+    margin-bottom: 150px;
+  }
+}

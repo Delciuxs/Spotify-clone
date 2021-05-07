@@ -1,0 +1,77 @@
+@import "InputRange";
+
+.player {
+  height: 120px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #282828;
+  background-color: #181818; /* Black */
+  overflow-x: hidden;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .cancion {
+    display: flex;
+    align-items: center;
+    .info-cancion {
+      padding: 1rem;
+    }
+    #cancion-favorita{
+      color: #1db954;
+    }
+    i{
+      font-size: 1.5rem;
+    }
+  }
+  .controles-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    i {
+      font-size: 1.5rem;
+      padding: 0.5rem;
+    }
+    .tiempo {
+      display: flex;
+      align-items: center;
+      span {
+        padding: 0.3rem;
+      }
+    }
+  }
+  .controles-2 {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    i {
+      font-size: 1.5rem;
+      padding-right: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .player {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 150px;
+    .controles-1 {
+      display: flex;
+      flex-direction: row;
+    }
+    .controles-2 {
+      display: none;
+      i {
+        display: none;
+      }
+      input {
+        display: none;
+      }
+    }
+  }
+}

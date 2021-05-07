@@ -1,0 +1,65 @@
+.side-bar {
+  height: 100vh;
+  width: 25%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000000; /* Black */
+  overflow-x: hidden;
+  padding-top: 20px;
+  color: white;
+  .spotifi-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    i {
+      font-size: 3rem;
+      padding-left: 1.5rem;
+      padding-right: 0.5rem;
+    }
+    span {
+      font-size: 2rem;
+    }
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a {
+      width: 90%;
+      text-decoration: none;
+      color: white;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      margin: 0.3rem;
+      &:active,
+      &.active {
+        background: #282828;
+      }
+      i {
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .side-bar {
+    span {
+      display: none;
+    }
+    .spotifi-logo {
+      justify-content: center;
+      #logo {
+        padding-right: 0px;
+        padding-left: 0px;
+      }
+    }
+    .nav-links {
+      a {
+        width: fit-content;
+      }
+    }
+  }
+}
