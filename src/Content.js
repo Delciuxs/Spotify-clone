@@ -17,10 +17,10 @@ const Content = ({
         <Route path="/" exact>
           <Home setPlayTrack={setPlayTrack} />
         </Route>
-        <Route path="/search">
+        <Route path="/search" exact>
           <Search setPlayTrack={setPlayTrack} />
         </Route>
-        <Route path="/favorites">
+        <Route path="/favorites" exact>
           <Favorites
             setPlayTrack={setPlayTrack}
             favoriteTracks={favoriteTracks}
